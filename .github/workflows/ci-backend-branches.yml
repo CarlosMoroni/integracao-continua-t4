@@ -29,4 +29,5 @@ jobs:
           target_branch: main
           github_token: ${{ github.token }}
       - name: test
+        working-directory: sgcmapi/
         run: mvn spring-boot:test
